@@ -1,0 +1,12 @@
+#human Data Base
+ppl_ik = ("julio", "Maiah", "kay")
+
+Julio = { "hair" : "curly", "height" : "tall", "birth" : "NYC", }
+
+Maiah = { "hair" : "curly", "height" : "small", "birth" : "nyc"}
+
+kay = { "hair" : "straight", "height" : "tall", "birth" : "unknown"}
+
+Will = { "hair" : "future_bald", "height" : "tall", "birth" : "long_isalnd"}
+
+print(ppl_ik[Julio])
