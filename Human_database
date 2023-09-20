@@ -1,12 +1,37 @@
 #human Data Base
-ppl_ik = ("julio", "Maiah", "kay")
+ppl_ik = {
+          "julio" : {"hair" : "curly", "height" : "tall", "birth" : "NYC"}, 
+          "kay" : { "hair" : "straight", "height" : "tall", "birth" : "unknown"}, 
+          "will" : { "hair" : "future_bald", "height" : "tall", "birth" : "long_isalnd"}, 
+          "carlos" : {"hair" : "no hair", "height" : "tall", "birth" : "NYC"},
+          "jemis" : {"hair" : "curly", "height" : "small", "birth" : "NYC"},
+          "grayson" : {"hair" : "curly", "height" : "small", "birth" : "va"},
+          "Grimace" : {"hair" : "Purple", "height" : "7'1", "birth" : "Mc Donalds" }
+          }
 
-Julio = { "hair" : "curly", "height" : "tall", "birth" : "NYC", }
 
-Maiah = { "hair" : "curly", "height" : "small", "birth" : "nyc"}
 
-kay = { "hair" : "straight", "height" : "tall", "birth" : "unknown"}
 
-Will = { "hair" : "future_bald", "height" : "tall", "birth" : "long_isalnd"}
 
-print(ppl_ik[Julio])
+
+wanted = input("can you please type in the name of the person u are looking for (all lower case plz)  ")
+deeper_info = input("would u like specific info Y/N ")
+if str(deeper_info) == ("y"):
+  subject = input("what would you like to know i.e. hair, height, birth  ")
+  print((ppl_ik[str(wanted)][str(subject)]))
+
+elif str(deeper_info) == ("n"):
+  print((ppl_ik[str(wanted)]))
+
+elif str(deeper_info) == ("mori"):
+  print("welcome back")
+  manage = input("what would you like to do (add, minus, check total, see data) ")
+  if str(manage) == str("add"):
+    grhfhdf
+  elif str(manage) == str("minus"):
+    hfdhfh
+  elif str(manage) == str("check total"):
+    print(len(ppl_ik))
+  elif str(manage) == str("see data"):
+    print(ppl_ik)
+  
